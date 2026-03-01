@@ -1,17 +1,18 @@
 package org.ray;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import org.ray.DataTypes.CharacterType;
+import org.ray.DataTypes.IntegersType;
+import org.ray.DataTypes.StringType;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+       IntegersType name = new IntegersType();  // Here we created the object of Class Integers which is present in DataTypes
+        int salary = name.getSalary(); // Referred the class object in salary
+        System.out.println("Salary is :" + salary); // Finally printed the salary by concatenating the string and value
+        StringType person = new StringType("Ankur","ankur@ray.com","Delhi");
+        System.out.println(person);
+        CharacterType characterType = new CharacterType();
+        characterType.printAlphabets();
+  }
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
-    }
 }
