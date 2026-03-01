@@ -1,12 +1,16 @@
 package org.ray.DataTypes;
 
-public class Integers {
+
+
+public class IntegersType {
     //We can define integers and related data type by this line of
     // DataType ReferenceName = Value
 
     //For example
 
     int salary = 85000;
+
+
 
 
     // Now to get this value in our main app we can create the object of this class by get method we can
