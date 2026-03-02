@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="dark" lang="en-GB"><!-- Lichess is open source! See https://lichess.org/source -->
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,viewport-fit=cover" name="viewport">
+    <meta content="default-src 'self' lichess1.org; connect-src https://engine.lichess.ovh 'self' blob: data: lichess1.org wss://socket0.lichess.org wss://socket3.lichess.org wss://socket1.lichess.org wss://socket4.lichess.org wss://socket2.lichess.org wss://socket5.lichess.org wss://cf-socket0.lichess.org wss://cf-socket1.lichess.org wss://cf-socket2.lichess.org https://explorer.lichess.org https://tablebase.lichess.org; style-src 'self' 'unsafe-inline' lichess1.org; frame-src 'self' lichess1.org www.youtube.com www.youtube-nocookie.com player.twitch.tv player.vimeo.com; worker-src 'self' lichess1.org blob:; img-src 'self' blob: data: *; media-src 'self' blob: lichess1.org; script-src 'unsafe-eval' 'nonce-VIs3UqW8NM76mIypwUpj7PSY' 'self' lichess1.org; font-src 'self' lichess1.org; base-uri 'none';"
+          http-equiv="Content-Security-Policy">
+    <meta content="#2e2a24" name="theme-color">
+    <title>Puzzles • lichess.org</title>
+    <link data-css-key="lib.theme.all" href="https://lichess1.org/assets/css/lib.theme.all.6cd1aa27.css"
+          rel="stylesheet"/>
+    <link data-css-key="site" href="https://lichess1.org/assets/css/site.0235c66d.css" rel="stylesheet"/>
+    <link data-css-key="puzzle" href="https://lichess1.org/assets/css/puzzle.ab6dd9e0.css" rel="stylesheet"/>
+    <meta content="Lichess tactic trainer: Find the best move for black.. Played by 29954 players." name="description"/>
+    <link color="black" href="https://lichess1.org/assets/logo/lichess.svg" rel="mask-icon"/>
+    <link href="https://lichess1.org/assets/logo/lichess-favicon-512.png" rel="icon" sizes="512x512" type="image/png">
+    <link href="https://lichess1.org/assets/logo/lichess-favicon-256.png" rel="icon" sizes="256x256" type="image/png">
+    <link href="https://lichess1.org/assets/logo/lichess-favicon-192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="https://lichess1.org/assets/logo/lichess-favicon-128.png" rel="icon" sizes="128x128" type="image/png">
+    <link href="https://lichess1.org/assets/logo/lichess-favicon-64.png" rel="icon" sizes="64x64" type="image/png">
+    <link href="https://lichess1.org/assets/logo/lichess-favicon-32.png" id="favicon" rel="icon" sizes="32x32"
+          type="image/png">
+    <meta content="notranslate" name="google">
+    <meta content="Chess tactic #6D7ee - Black to play" property="og:title"/>
+    <meta content="Lichess tactic trainer: Find the best move for black.. Played by 29954 players."
+          property="og:description"/>
+    <meta content="https://lichess.org/training/6D7ee" property="og:url"/>
+    <meta content="website" property="og:type"/>
+    <meta content="lichess.org" property="og:site_name"/>
+    <meta content="https://lichess1.org/training/export/gif/thumbnail/6D7ee.gif?theme=brown&amp;piece=cburnett"
+          property="og:image"/>
+    <link href="/feed.atom" rel="alternate" title="Lichess Updates Feed" type="application/atom+xml"/>
+    <link as="font" crossorigin href="https://lichess1.org/assets/hashed/lichess.2a2cb52f.woff2" rel="preload"
+          type="font/woff2">
+    <link as="font" crossorigin href="https://lichess1.org/assets/hashed/noto-sans-latin.086bfcad.woff2"
+          rel="preload" type="font/woff2">
+    <link as="font" crossorigin href="https://lichess1.org/assets/hashed/roboto-latin.20b535fa.woff2"
+          rel="preload" type="font/woff2">
+    <link as="font" crossorigin href="https://lichess1.org/assets/hashed/lichess-chess.02d5eb8f.woff2"
+          rel="preload" type="font/woff2">
+    <link as="image" fetchpriority="high" href="https://lichess1.org/assets/hashed/brown.d4a5fe34.png" rel="preload">
+    <link href="/manifest.json" rel="manifest">
+    <link href="https://lichess.org/training/mix" hreflang="x-default" rel="alternate"/>
+    <link href="https://lichess.org/training/mix" hreflang="en" rel="alternate"/>
+    <link href="https://lichess.org/ru/training/mix" hreflang="ru" rel="alternate"/>
+    <link href="https://lichess.org/es/training/mix" hreflang="es" rel="alternate"/>
+    <link href="https://lichess.org/tr/training/mix" hreflang="tr" rel="alternate"/>
+    <link href="https://lichess.org/fr/training/mix" hreflang="fr" rel="alternate"/>
+    <link href="https://lichess.org/de/training/mix" hreflang="de" rel="alternate"/>
+    <link href="https://lichess.org/pt/training/mix" hreflang="pt" rel="alternate"/>
+    <link href="https://lichess.org/it/training/mix" hreflang="it" rel="alternate"/>
+    <link href="https://lichess.org/pl/training/mix" hreflang="pl" rel="alternate"/>
+    <link href="https://lichess.org/ar/training/mix" hreflang="ar" rel="alternate"/>
+    <link href="https://lichess.org/fa/training/mix" hreflang="fa" rel="alternate"/>
+    <link href="https://lichess.org/nl/training/mix" hreflang="nl" rel="alternate"/>
+    <link href="https://lichess.org/id/training/mix" hreflang="id" rel="alternate"/>
+    <link href="https://lichess.org/nb/training/mix" hreflang="nb" rel="alternate"/>
+    <link href="https://lichess.org/el/training/mix" hreflang="el" rel="alternate"/>
+    <link href="https://lichess.org/sv/training/mix" hreflang="sv" rel="alternate"/>
+    <link href="https://lichess.org/uk/training/mix" hreflang="uk" rel="alternate"/>
+    <link href="https://lichess.org/cs/training/mix" hreflang="cs" rel="alternate"/>
+    <link href="https://lichess.org/vi/training/mix" hreflang="vi" rel="alternate"/>
+    <link href="https://lichess.org/sr/training/mix" hreflang="sr" rel="alternate"/>
+    <link href="https://lichess.org/hr/training/mix" hreflang="hr" rel="alternate"/>
+    <script defer="defer" src="https://lichess1.org/assets/hashed/cash.min.6f838d25.js"></script>
+    <script src="https://lichess1.org/assets/compiled/manifest.ecf97a94.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/i18n/site.en-GB.958203b732c1.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/i18n/timeago.en-GB.c5b087b5c613.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/i18n/preferences.en-GB.84538523c26b.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/i18n/puzzle.en-GB.99d193323e74.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/i18n/puzzleTheme.en-GB.91ecedbf14dd.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/site.CX5PMU2H.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.IZL3373J.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.P5SMZFVQ.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.OTNRCS6G.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.ICJMMVNM.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.P2KHB2MX.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.XWZ5N3S5.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.K5Y2Q6J6.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.D5K4R6NR.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.XIZGCIOC.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.TIZVGH3C.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.R6WMDUAH.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.TPNYGJOG.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.JDGIJSRT.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.SM2D2BUH.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.3U4WRQAU.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.PUZNKYJD.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.XN2YPPXF.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.K7BTCZAK.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.K5BZ6UV3.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.LE4HQ5U6.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.IOXN4NVB.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.MKCRHF5Y.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.XNXLGS2X.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/puzzle.NXXM62BL.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.AN5TVNEZ.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.5KLZKBCD.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.K4SQT4HR.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.FW6KKVBU.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.TAOKPNEK.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.5QBA3FR6.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.HYZ6CA3J.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.C26ELENO.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.237XULVX.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.67ACEBRY.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.MPU364ZO.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.27QCM45T.js" type="module"></script>
+    <script src="https://lichess1.org/assets/compiled/lib.4YJKJCNK.js" type="module"></script>
+    <style>
+        @font-face {font-family: 'lichess';font-display: block;src: url('https://lichess1.org/assets/hashed/lichess.2a2cb52f.woff2') format('woff2')}
+    </style>
+    <style>
+        :root{---white-king:url(https://lichess1.org/assets/hashed/wK.bc7274dd.svg);---white-queen:url(https://lichess1.org/assets/hashed/wQ.79c9227e.svg);---white-rook:url(https://lichess1.org/assets/hashed/wR.e9e95adc.svg);---white-bishop:url(https://lichess1.org/assets/hashed/wB.b7d1a118.svg);---white-knight:url(https://lichess1.org/assets/hashed/wN.68b788d7.svg);---white-pawn:url(https://lichess1.org/assets/hashed/wP.0596b7ce.svg);---black-king:url(https://lichess1.org/assets/hashed/bK.c5f22c23.svg);---black-queen:url(https://lichess1.org/assets/hashed/bQ.5abdb5aa.svg);---black-rook:url(https://lichess1.org/assets/hashed/bR.c33a3d54.svg);---black-bishop:url(https://lichess1.org/assets/hashed/bB.77e9debf.svg);---black-knight:url(https://lichess1.org/assets/hashed/bN.d0665564.svg);---black-pawn:url(https://lichess1.org/assets/hashed/bP.09539f32.svg);}
+    </style>
+    <link as="image" href="https://lichess1.org/assets/hashed/wK.bc7274dd.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/wQ.79c9227e.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/wR.e9e95adc.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/wB.b7d1a118.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/wN.68b788d7.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/wP.0596b7ce.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/bK.c5f22c23.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/bQ.5abdb5aa.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/bR.c33a3d54.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/bB.77e9debf.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/bN.d0665564.svg" rel="preload"/>
+    <link as="image" href="https://lichess1.org/assets/hashed/bP.09539f32.svg" rel="preload"/>
+</head>
+<body class="dark coords-in simple-board zenable" data-asset-url="https://lichess1.org"
+      data-asset-version="eFX5kw"
+      data-board="brown" data-board3d="Woodi" data-i18n-catalog="https://lichess1.org/assets/compiled/i18n/en-GB.d7f6fa8f0f72.js"
+      data-nonce="VIs3UqW8NM76mIypwUpj7PSY" data-piece-set="cburnett" data-piece-set3d="Basic" data-socket-domains="socket0.lichess.org,socket3.lichess.org,socket1.lichess.org,socket4.lichess.org,socket2.lichess.org,socket5.lichess.org" data-sound-set="standard"
+      data-theme="dark"
+      style="---board-opacity:100;---board-brightness:100;---board-contrast:100;---board-hue:0;---zoom:80;">
+<form action="/run/toggle-blind-mode" id="blind-mode" method="POST"><input name="enable" type="hidden" value="1"><input
+        name="redirect" type="hidden" value="/training/mix">
+    <button id="nvui-button" type="submit">Accessibility - Enable blind mode</button>
+</form>
+<div id="zenzone"><a class="zen-home" href="/"></a><a class="text fbt active" data-icon="" id="zentog">Zen mode</a>
+</div>
+<header id="top">
+    <div class="site-title-nav">
+        <input aria-label="Navigation" autocomplete="off" class="topnav-toggle fullscreen-toggle" id="tn-tg"
+               type="checkbox">
+        <label class="fullscreen-mask" for="tn-tg"></label>
+        <label class="hbg" for="tn-tg"><span class="hbg__in"></span></label><a class="site-title" href="/">
+        <div class="site-icon" data-icon=""></div>
+        <div class="site-name">lichess<span>.org</span></div>
+    </a>
+        <nav class="hover" id="topnav">
+            <section><a href="/"><span class="play">Play</span><span class="home">lichess.org</span></a>
+                <div role="group"><a href="/?any#hook">Create lobby game</a><a href="/tournament">Arena
+                    tournaments</a><a href="/swiss">Swiss tournaments</a><a href="/simul">Simultaneous exhibitions</a><a
+                        class="community-patron mobile-only" href="/patron">Donate</a></div>
+            </section>
+            <section><a href="/training">Puzzles</a>
+                <div role="group"><a href="/training">Puzzles</a><a href="/training/themes">Puzzle Themes</a><a
+                        href="/training/dashboard/30">Puzzle Dashboard</a><a href="/streak">Puzzle Streak</a><a
+                        href="/storm">Puzzle Storm</a><a href="/racer">Puzzle Racer</a></div>
+            </section>
+            <section><a href="/learn">Learn</a>
+                <div role="group"><a href="/learn">Chess basics</a><a href="/practice">Practice</a><a
+                        href="/training/coordinate">Coordinates</a><a href="/study">Study</a><a
+                        href="/coach">Coaches</a></div>
+            </section>
+            <section><a href="/broadcast">Watch</a>
+                <div role="group"><a href="/broadcast">Broadcasts</a><a href="/tv">Lichess TV</a><a href="/games">Current
+                    games</a><a href="/streamer">Streamers</a><a href="/video">Video library</a></div>
+            </section>
+            <section><a href="/player">Community</a>
+                <div role="group"><a href="/player">Players</a><a href="/team">Teams</a><a href="/forum">Forum</a><a
+                        href="/blog/community">Blog</a></div>
+            </section>
+            <section><a href="/analysis">Tools</a>
+                <div role="group"><a href="/analysis">Analysis board</a><a href="/opening">Openings</a><a
+                        href="/editor">Board editor</a><a href="/paste">Import game</a><a href="/games/search">Advanced
+                    search</a></div>
+            </section>
+        </nav>
+    </div>
+    <div class="site-buttons">
+        <div id="warn-no-autoplay"><a data-icon="" href="/faq#autoplay" target="_blank"></a></div>
+        <div id="clinput"><a class="link" data-icon=""></a><input aria-label="Search" autocomplete="false"
+                                                                   enterkeyhint="search" placeholder="Search"
+                                                                   spellcheck="false"/></div>
+        <div class="signin-or-signup"><a class="signin" href="/login?referrer=/training/mix">Sign in</a><a
+                class="button signup" href="/signup">Register</a></div>
+        <div class="dasher">
+            <button aria-label="Preferences" class="toggle anon link" data-icon="" title="Preferences"></button>
+            <div class="dropdown" id="dasher_app"></div>
+        </div>
+    </div>
+</header>
+<div class="is2d" id="main-wrap">
+    <main class="puzzle">
+        <aside class="puzzle__side">
+            <div class="puzzle__side__metas"></div>
+        </aside>
+        <div class="puzzle__board main-board">
+            <div class="cg-wrap">
+                <cg-container>
+                    <cg-board></cg-board>
+                </cg-container>
+            </div>
+        </div>
+        <div class="puzzle__tools"></div>
+        <div class="puzzle__controls"></div>
+    </main>
+</div>
+<a class="link text" data-icon="" id="network-status"></a>
+<svg height="0" width="0">
+    <mask id="mask">
+        <path d="M38.956.5c-3.53.418-6.452.902-9.286 2.984C5.534 1.786-.692 18.533.68 29.364 3.493 50.214 31.918 55.785 41.329 41.7c-7.444 7.696-19.276 8.752-28.323 3.084C3.959 39.116-.506 27.392 4.683 17.567 9.873 7.742 18.996 4.535 29.03 6.405c2.43-1.418 5.225-3.22 7.655-3.187l-1.694 4.86 12.752 21.37c-.439 5.654-5.459 6.112-5.459 6.112-.574-1.47-1.634-2.942-4.842-6.036-3.207-3.094-17.465-10.177-15.788-16.207-2.001 6.967 10.311 14.152 14.04 17.663 3.73 3.51 5.426 6.04 5.795 6.756 0 0 9.392-2.504 7.838-8.927L37.4 7.171z" fill="#fff" stroke="#fff"
+              stroke-linejoin="round"/>
+    </mask>
+</svg>
+<script nonce="VIs3UqW8NM76mIypwUpj7PSY">(function(){window.site||(window.site={}),window.site.load||(window.site.load=new Promise(function(i){document.addEventListener("DOMContentLoaded",function(){i()})}));
+})()
+</script>
+<script nonce="VIs3UqW8NM76mIypwUpj7PSY">site.load.then(()=>{site.asset.loadEsmPage('puzzle')})</script>
+<script id="page-init-data" type="application/json">{
+    "data": {
+        "game": {
+            "id": "vzT1MwxG",
+            "perf": {
+                "key": "rapid",
+                "name": "Rapid"
+            },
+            "rated": true,
+            "players": [
+                {
+                    "name": "edwardsklyaroff",
+                    "id": "edwardsklyaroff",
+                    "color": "white",
+                    "rating": 1841
+                },
+                {
+                    "name": "lemilio775",
+                    "id": "lemilio775",
+                    "color": "black",
+                    "rating": 1846
+                }
+            ],
+            "pgn": "e4 d5 exd5 Qxd5 Nc3 Qd8 f4 Nf6 Nf3 Bg4 h3 Bxf3 Qxf3 c6 Bc4 e6 O-O Bd6 Ne4 Nxe4 Qxe4 Qc7 d4 Nd7 f5 e5 dxe5 Nxe5 Bf4 f6 Be6 Rd8 Rad1 Ke7 a3 g6 Bxe5 Bxe5 Rxd8 Rxd8 c3 Rd2 Rf2 Qb6 Qb4+ Qxb4 axb4 Rxf2 Kxf2 gxf5 Bxf5 h6 Ke3 b6 Kd3 Bf4 b3 Kd6 c4 Ke5 Bd7 c5 bxc5 bxc5 g4 Bg3 Bc8 Bf2 Ke2 Bd4 Kf3 a5 Bd7 Bc3 Bf5 Bd2 Ke2 Bf4 Kd3 Bc1 Ke2 Kf4 Kf2 Bd2 Be6 Ke4 Ke2 Be3 Bd7 Kf4 Bf5 Bd4 h4",
+            "clock": "10+0"
+        },
+        "puzzle": {
+            "id": "6D7ee",
+            "rating": 1505,
+            "plays": 29954,
+            "solution": [
+                "h6h5",
+                "f5e6",
+                "h5g4"
+            ],
+            "themes": [
+                "endgame",
+                "crushing",
+                "short",
+                "bishopEndgame"
+            ],
+            "initialPly": 92
+        },
+        "angle": {
+            "key": "mix",
+            "name": "Puzzle Themes",
+            "desc": "A bit of everything. You don\u0027t know what to expect, so you remain ready for anything! Just like in real games."
+        }
+    },
+    "pref": {
+        "coords": 1,
+        "keyboardMove": 0,
+        "voiceMove": null,
+        "rookCastle": 1,
+        "animation": {
+            "duration": 250
+        },
+        "destination": true,
+        "moveEvent": 2,
+        "highlight": true,
+        "is3d": false
+    },
+    "showRatings": true,
+    "settings": {
+        "difficulty": "normal"
+    },
+    "externalEngineEndpoint": "https://engine.lichess.ovh"
+}</script>
+</body>
+</html>
