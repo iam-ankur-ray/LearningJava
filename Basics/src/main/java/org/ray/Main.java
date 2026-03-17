@@ -14,7 +14,6 @@ public class Main {
 
     }
 
-
     private static void getStudents() {
         for (int i = 1; i <= 5; i++) {
             Student students = new Student(
@@ -38,5 +37,4 @@ public class Main {
             System.out.println(students);
         }
     }
-
 }
