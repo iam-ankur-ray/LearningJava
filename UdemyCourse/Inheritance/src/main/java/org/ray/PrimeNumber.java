@@ -1,7 +1,6 @@
 package org.ray;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -15,17 +14,25 @@ public class PrimeNumber {
         int input = scanner.nextInt();
         System.out.println(isPrime(input));
 
-        System.out.print("Please input how many prime numbers up to 10,000 : ");
+        System.out.print("Please input how many prime numbers you want to check : ");
         int numbers = scanner.nextInt();
-        System.out.println(primeNumbers(numbers));
+        System.out.println(getPrimesNumbers(numbers));
+
+
     }
 
 
-    private static boolean isPrime(int n) {
+    public static boolean isPrime(int n) {
         if (n == 1) {
             return false;
         }
-        for (int i = 2; i < sqrt(n); i++) {
+        if (n == 2) {
+            return true;
+        }
+        if (n % 2 == 0) {
+            return false;
+        }
+        for (int i = 3; i <= Math.sqrt(n); i = i + 2) {
             if (n % i == 0) {
                 return false;
             }
@@ -33,13 +40,40 @@ public class PrimeNumber {
         return true;
     }
 
-    private static List<Integer> primeNumbers(int n) {
-        List<Integer> numbers = new ArrayList<>();
-        for (int i = 1; i < 10000; i++) {
-            if (isPrime(i)) {
-                numbers.add(i);
+    /**
+     * TODO: Get first nth prime numbers by checking only prime factors
+     *
+     * @param n
+     * @return List of 0-n prime numbers as a list
+     */
+    public static List<Integer> getPrimesNumbers(int n) {
+        List<Integer> primes = new ArrayList<>();
+        primes.add(2);
+        primes.add(3);
+
+        if (n > 2) {
+            for (int i = 5; primes.size() <= n; i += 2) {
+                boolean prime = true;
+                for (int j : primes) {
+                    if (i % j == 0) {
+                        prime = false;
+                        break;
+                    }
+                }
+                if (prime) {
+                    primes.add(i);
+                }
             }
         }
-        return numbers.subList(0, n - 1);
+
+
+        return primes.subList(0, n);
     }
+
+    /**
+     * 1. Ek pehle optimization kiya tha jo ab missing h..
+     * 2. And isko is tarah socho ki ye method multiple times call hoga with different values of n
+     *  to aisa kya change kre ki processing repeat na ho..
+     */
+
 }
